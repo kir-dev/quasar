@@ -1,6 +1,6 @@
 # quasar
 
-quasar is IRC bot to help with various (and mostly tedious) tasks that we
+quasar is an IRC bot to help with various (and mostly tedious) tasks that we
 encountered while extensively using IRC for communication at
 [Kir-Dev](http://kir-dev.sch.bme.hu).
 
