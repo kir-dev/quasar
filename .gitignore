@@ -1,0 +1,6 @@
+# quasar-bot executable
+quasar
+quasar.exe
+
+# never commit your own config
+config.json

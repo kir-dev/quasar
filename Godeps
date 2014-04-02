@@ -1,0 +1,13 @@
+{
+	"ImportPath": "quasar",
+	"GoVersion": "go1.2",
+	"Packages": [
+		"./quasar-bot/"
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Rev": "f08bb026e0d6b644cad24d850d13352cc47400c5"
+		}
+	]
+}
