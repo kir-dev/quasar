@@ -47,6 +47,7 @@ Assuming a running and functional postgresql server.
 Assuming you have go installed, create your workspace.
 
     $ mkdir -p /path/to/your/workspace/src
+    $ export GOPATH=$GOPATH:/path/to/your/workspace
 
 The src folder at the end is mandatory.
 
