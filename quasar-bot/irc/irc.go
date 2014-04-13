@@ -119,8 +119,13 @@ func (con *IRCConnection) Connect() error {
 	return nil
 }
 
-func (con *IRCConnection) Disconnect() {
-	con.socket.Write([]byte("QUIT\r\n"))
+func (con *IRCConnection) Disconnect(quit_message string) {
+	if len(quit_message) > 0 {
+		con.socket.Write([]byte(fmt.Sprintf("QUIT :%s\r\n", quit_message)))
+	}
+	else {
+		con.socket.Write([]byte("QUIT\r\n"))
+	}
 	close(con.write)
 	con.socket.Close()
 	<-con.reader_stopped
