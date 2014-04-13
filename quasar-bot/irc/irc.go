@@ -73,7 +73,7 @@ func (con *IRCConnection) Loop() {
 			break
 		}
 	}
-	con.Disconnect()
+	con.Disconnect("")
 }
 
 func (con *IRCConnection) Register() {
